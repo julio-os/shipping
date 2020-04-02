@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <carriers>
+            <custom>
+                <active>0</active>
+                <model>Julio\Shipping\Model\Carrier</model>
+                <name>Julio Shipping</name>
+
+                <standard_active>1</standard_active>
+                <standard_title>Standard</standard_title>
+                <standard_price>90</standard_price>
+
+                <freeover_active>1</freeover_active>
+                <freeover_title>Free Over %1</freeover_title>
+                <freeover_amount>2500</freeover_amount>
+
+                <sameday_active>1</sameday_active>
+                <sameday_title>Same Day Delivery</sameday_title>
+                <sameday_price>180</sameday_price>
+
+                <mbe_api_mode>sandbox</mbe_api_mode>
+
+                <sallowspecific>0</sallowspecific>
+                <specificerrmsg>This shipping method is not available. To use this shipping method, please contact us.</specificerrmsg>
+            </custom>
+        </carriers>
+    </default>
+</config>
